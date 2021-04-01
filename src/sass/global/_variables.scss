@@ -1,0 +1,26 @@
+// 変数
+
+
+
+
+
+
+
+// カラー
+/* $mainColor: red !default;
+$subColor: plum !default;
+ */
+
+// ブレイクポイント
+$breakpoints: (
+  xs-min: '(min-width: 320px)',
+  xs-max: '(max-width: 319px)',
+  sm-min: '(min-width: 375px)',
+  sm-max: '(max-width: 374px)',
+  md-min: '(min-width: 701px)',
+  md-max: '(max-width: 700px)',
+  lg-min: '(min-width: 901px)',
+  lg-max: '(max-width: 900px)',
+  xl-min: '(min-width: 1366px)',
+  xl-max: '(max-width: 1365px)'
+);

@@ -1,0 +1,106 @@
+// ページ・ベーカリー
+
+// ミックスイン
+@use "../global" as g;
+
+
+.bakery {
+
+  &__sectionContainer {
+    height: 100vh;
+    overflow: auto;
+    scroll-snap-type: y mandatory;
+  }
+
+  &__section {
+    height: 100vh;
+    scroll-snap-align: start;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    &--hero {
+      padding-top: 10vh;
+      background-image: url(../images/bread1.jpg);
+      text-align: center;
+    }
+
+    &--menu {
+      display: flex;
+      align-items: center;
+      background-image: url(../images/bread2.jpg);
+    }
+
+    &--contact {
+      padding-top: 8vh;
+      background-image: url(../images/cafe.jpg);
+      text-align: center;
+    }
+  }
+
+  &__heading {
+    margin-bottom: 2rem;
+    font-family: 'Dancing Script', cursive;
+    font-size: 7rem;
+  }
+
+  &__text,
+  &__address {
+    margin: 0 1rem;
+    font-size: 1.125rem;
+    line-height: 1.7;
+  }
+
+  &__sectionInner {
+    width: 100%;
+    max-width: 900px;
+    padding: 0 1rem;
+    margin: 0 auto;
+  }
+
+  &__table {
+    font-size: 1.125rem;
+    line-height: 1.7;
+  }
+
+  &__tableHeader {
+    padding: 1px;
+    font-weight: normal;
+  }
+
+  &__tableData {
+    padding: 1px 1px 1px 1rem;
+  }
+
+  &__link {
+    display: inline-block;
+    margin: 2rem 0 2.25rem;
+    padding: 1rem 3.5rem;
+    font-size: 1.5rem;
+    border-radius: 6px;
+    background-color: #555;
+    color: #fff;
+
+    &:hover {
+      background-color: #777;
+    }
+  }
+
+
+  @include g.mq(md-max) {
+    &__heading {
+      font-size: 4rem;
+    }
+
+    &__text,
+    &__address {
+      font-size: 1rem;
+    }
+
+    &__section {
+      &--hero {
+        padding-top: 12vh;
+      }
+    }
+  }
+}

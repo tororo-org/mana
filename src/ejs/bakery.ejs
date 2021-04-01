@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<%- include('components/common/_head.ejs', {page_title: 'ベーカリー'}) %>
+
+<body class="bakery">
+
+<div class="bakery__sectionContainer">
+  <section class="bakery__section bakery__section--hero">
+    <h1 class="bakery__heading">WCB Bakery</h1>
+
+    <p class="bakery__text">
+      素材と食感にこだわったパンが勢ぞろい。<br>
+      毎朝仕込んで焼き上げています。<br>
+      パンと一緒に過ごす至福のひとときをお楽しみください。
+    </p>
+  </section>
+
+  <section class="bakery__section bakery__section--menu">
+    <div class="bakery__sectionInner">
+      <h2 class="bakery__heading">Menu</h2>
+
+      <table class="bakery__table">
+        <tr>
+          <th class="bakery__tableHeader">・メロンパン</th>
+          <td class="bakery__tableData">¥220</td>
+        </tr>
+
+        <tr>
+          <th class="bakery__tableHeader">・りんごのデニッシュ</th>
+          <td class="bakery__tableData">¥240</td>
+        </tr>
+
+        <tr>
+          <th class="bakery__tableHeader">・チョコレートクロワッサン</th>
+          <td class="bakery__tableData">¥280</td>
+        </tr>
+
+        <tr>
+          <th class="bakery__tableHeader">・バゲット</th>
+          <td class="bakery__tableData">¥300</td>
+        </tr>
+
+        <tr>
+          <th class="bakery__tableHeader">・いちごのペストリー</th>
+          <td class="bakery__tableData">¥300</td>
+        </tr>
+
+        <tr>
+          <th class="bakery__tableHeader">・そら豆のパン</th>
+          <td class="bakery__tableData">¥320</td>
+        </tr>
+
+        <tr>
+          <th class="bakery__tableHeader">・ブルーベリージャム</th>
+          <td class="bakery__tableData">¥400</td>
+        </tr>
+
+        <tr>
+          <th class="bakery__tableHeader">・レーズンとくるみのパン</th>
+          <td class="bakery__tableData">¥700</td>
+        </tr>
+
+        <tr>
+          <th class="bakery__tableHeader">・ランチセット</th>
+          <td class="bakery__tableData">¥1,200</td>
+        </tr>
+      </table>
+    </div><!-- /.menuSection__inner -->
+  </section>
+
+  <section class="bakery__section bakery__section--contact">
+    <h2 class="bakery__heading">Contact</h2>
+
+    <address class="bakery__address">東京都新宿区市谷左内町00-00</address>
+
+    <p class="bakery__text">営業時間 8:00〜20:00</p>
+
+    <a class="bakery__link" href="#">お問い合わせ</a>
+
+    <ul class="bakary__sns sns">
+      <li class="sns__item">
+        <a class="sns__link" href="#">
+          <i class="fab fa-facebook-square sns__icon"></i>
+        </a>
+      </li>
+
+      <li class="sns__item">
+        <a class="sns__link" href="#">
+          <i class="fab fa-twitter sns__icon"></i>
+        </a>
+      </li>
+
+      <li class="sns__item">
+        <a class="sns__link" href="#">
+          <i class="fab fa-instagram sns__icon"></i>
+        </a>
+      </li>
+    </ul>
+  </section>
+</div><!-- /.bakery__sectionContainer -->
+
+<%- include('components/common/_script.ejs') %>
+
+</body>
+</html>

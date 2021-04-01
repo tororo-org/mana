@@ -1,0 +1,25 @@
+// SNS
+
+.sns {
+  display: flex;
+  justify-content: center;
+
+  &__item {
+    & + & {
+      margin-left: 1rem;
+    }
+  }
+
+  &__icon {
+    font-size: 2rem;
+    background-color: #fff;
+    width: 3.75rem;
+    height: 3.75rem;
+    line-height: 3.75rem;
+    border-radius: 50%;
+
+    &:hover {
+      background-color: rgba(255,255,255,0.5);
+    }
+  }
+}

@@ -1,3 +1,24 @@
-.test {
-  color: purple;
-}
+// 変数
+@use "settings/_variables.scss";
+
+
+// ベース
+@use "bases/_bases.scss";
+
+
+// コンポーネント・パーツ
+// 見出し
+@use "components/parts/headings";
+
+
+// コンポーネント・共通
+// SNS
+@use "components/common/_sns.scss";
+
+
+// コンポーネント・その他
+
+
+// ページ
+// ベーカリー
+@use "pages/bakery";

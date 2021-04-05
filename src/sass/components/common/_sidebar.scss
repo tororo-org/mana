@@ -1,0 +1,110 @@
+// サイドバー
+
+.sidebar {
+
+  &__section {
+    position: relative;
+    border: solid 1px #ccc;
+    border-radius: 6px;
+    outline: solid 2px #ccc;
+    outline-offset: 4px;
+    padding: 1.8rem 0.875rem 0.3rem;
+
+    &:not(:last-child) {
+      margin-bottom: 4rem;
+    }
+
+    &--popular {
+      position: sticky;
+      top: 1rem;
+    }
+
+    &::before {
+      content: "\f1b0";
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      width: 2rem;
+      height: 2rem;
+      font-size: 1.5rem;
+      text-align: center;
+      position: absolute;
+      top: -1rem;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      background-color: #fff;
+    }
+  }
+
+  &__heading {
+    margin-bottom: 1.125rem;
+    font-family: 'Amatic SC', cursive;
+    font-size: 1.875rem;
+    text-align: center;
+    letter-spacing: 0.1rem;
+  }
+
+  &__item {
+    padding: 1rem 0.25rem;
+    display: flex;
+
+    &:first-child {
+      padding-top: 0;
+    }
+
+    & + & {
+      border-top: dashed 1px #ccc;
+    }
+
+    &::before {
+      content: "";
+      width: 0.5rem;
+      height: 0.5rem;
+      border-radius: 50%;
+      background-color: #93d8d0;
+      margin: 6px 10px 0 0;
+    }
+  }
+
+  &__link {
+    flex: 1;
+    line-height: 1.4;
+
+    &:hover {
+      color: #7ac69f;
+    }
+  }
+
+  &__text {
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+  }
+
+  &__form {
+    display: flex;
+    margin-bottom: 0.5rem;
+  }
+
+  &__input {
+    width: 75%;
+    border: solid 2px #ccc;
+    border-right: none;
+    border-radius: 10px 0  0 10px;
+    padding: 1rem;
+
+    &::placeholder {
+      color: #ccc;
+    }
+  }
+
+  &__btn {
+    padding: 1.1rem;
+    border-radius: 0 10px 10px 0;
+    background-color: #eda1a1;
+    color: #fff;
+
+    &:hover {
+      background-color: #e38787;
+    }
+  }
+}

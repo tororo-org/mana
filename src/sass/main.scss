@@ -1,5 +1,5 @@
 // 変数
-@use "settings/_variables.scss";
+// @use "settings/_variables.scss";
 
 
 // ベース
@@ -9,16 +9,29 @@
 // コンポーネント・パーツ
 // 見出し
 @use "components/parts/headings";
+// リンク
+@use "components/parts/links";
 
 
 // コンポーネント・共通
+// ヘッダー
+@use "components/common/_header.scss";
+// ページネーション
+@use "components/common/pagination";
+// サイドバー
+@use "components/common/_sidebar.scss";
+// フッター
+@use "components/common/footer";
 // SNS
-@use "components/common/_sns.scss";
+// @use "components/common/_sns.scss";
 
 
 // コンポーネント・その他
+// 記事
+@use "components/other/articles/_cat-article.scss";
 
 
 // ページ
 // ベーカリー
-@use "pages/bakery";
+// @use "pages/bakery";
+@use "pages/_blog";

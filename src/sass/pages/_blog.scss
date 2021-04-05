@@ -1,0 +1,47 @@
+// ページ・CAT BLOG
+
+
+// ミックスイン
+@use "../global" as g;
+
+
+.catBlog {
+
+  &__container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1.5rem 1.5rem 3.5rem;
+    background-color: #fff;
+    border-radius: 0 0 10px 10px;
+  }
+
+  &__main {
+    margin-bottom: 3rem;
+  }
+
+  &__article {
+
+    &:not(:last-child) {
+      margin-bottom: 3rem;
+    }
+  }
+
+
+  @include g.mq(md-min) {
+    &__container {
+      padding: 1rem 2.5rem 2.5rem;
+      margin-bottom: 4rem;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__main {
+      width: 68%;
+      margin-bottom: 0;
+    }
+
+    &__sidebar {
+      width: 26%;
+    }
+  }
+}

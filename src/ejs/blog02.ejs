@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<%- include('components/common/_head.ejs', {page_title: 'CAT BLOG２'}) %>
+
+<body class="catBlog">
+
+<%- include('components/common/_header') %>
+
+
+<div class="catBlog__container">
+  <main class="catBlog__main">
+    <article class="catBlog__article catArticle">
+      <div class="catArticle__level2Heading primaryHeading">
+        <h2 class="primaryHeading__inner">
+          <a class="primaryHeading__link" href="#">初めて猫を飼う人必見！猫を飼うときに必要なもの</a>
+        </h2>
+      </div>
+
+      <div class="catArticle__thumb">
+        <img class="catArticle__image01" src="images/cat1.jpg" alt="写真：子猫">
+
+        <time class="catArticle__date" datetime="2021-12-28">
+          <span class="catArticle__year">2021</span>
+          12/28
+        </time>
+      </div><!-- /.catArticle__thumb -->
+
+      <p class="catArticle__text">
+        猫を飼い始めることになったら、まず何が必要なのでしょうか？ 必ず必要になるグッズと、あると便利な猫グッズを紹介します。 猫はこれからの10数年、ともに生きていく家族の一員です。気持ちよく生活をスタートできるよう、 事前にしっかりと準備しておきましょう！ おすすめキャットフードランキングもまとめました！
+      </p>
+
+      <h3 class="catArticle__level3Heading">猫を飼い始めるときの必須アイテム</h3>
+
+      <ul class="catArticle__necessaryList">
+        <li class="catArticle__necessaryItem">キャットフード</li>
+
+        <li class="catArticle__necessaryItem">トイレとトイレ砂</li>
+
+        <li class="catArticle__necessaryItem">食器</li>
+      </ul>
+
+      <img class="catArticle__image02" src="images/cat5.jpg" alt="写真：猫">
+
+      <h4 class="catArticle__level4Heading">おすすめのキャットフード</h4>
+
+      <ol class="catArticle__foodList">
+        <li class="catArticle__foodItem">ドライフードA</li>
+
+        <li class="catArticle__foodItem">ウェットフードB（C配合のもの）</li>
+
+        <li class="catArticle__foodItem">ドライフードD チキン味</li>
+      </ol>
+
+      <h5 class="catArticle__level5Heading">猫フードを選ぶポイント</h5>
+
+      <p class="catArticle__text">
+        人間用の食べ物ではなく、必ず猫用のドライフードやウェットフードを用意しましょう。 <b class="catArticle__attention">総合栄養食</b>と書かれたものを用意してください。 <a class="catArticle__foodLink" href="#">ドライフードとウェットフードを併用</a>してもいいでしょう。
+      </p>
+
+      <h6 class="catArticle__level6Heading">猫のかわいいしぐさ</h6>
+
+      <blockquote class="catArticle__quote">
+        <p class="catArticle__text">
+          リラックスしているときの猫の目はとってもおだやか。敵意がなく、相手に好意をもっているときは、目を細めたり、瞬きをします。ときどきウインクをしてくれますよ。
+        </p>
+      </blockquote>
+    </article>
+  </main>
+
+  <%- include('components/common/_sidebar', {element: 'catBlog__sidebar'}) %>
+</div><!-- /.catBlog__container -->
+
+
+<%- include('components/common/_footer') %>
+
+<%- include('components/common/_script.ejs') %>
+
+</body>
+</html>

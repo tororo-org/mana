@@ -1,1 +1,31 @@
-// 見出し
+// パーツ・見出し
+
+.primaryHeading {
+  padding-bottom: 10px;
+  background-size: 6px 6px;
+  background-image: linear-gradient(
+    45deg,
+    #fff 30%,
+    #ccc 30%,
+    #ccc 50%,
+    #fff 50%,
+    #fff 80%,
+    #ccc 80%,
+    #ccc 100%
+  );
+
+  &__inner {
+    padding: 0 0.5rem 0.875rem;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.5;
+    background-color: #fff;
+  }
+
+  &__link {
+    &:hover {
+      color: #605c55;
+    }
+  }
+}

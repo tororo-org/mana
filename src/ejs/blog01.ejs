@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<%- include('components/common/_head.ejs', {page_title: 'Cat Blog'}) %>
+
+<body class="catBlog">
+
+<%- include('components/common/_header') %>
+
+
+<div class="catBlog__container">
+  <main class="catBlog__main">
+    <article class="catBlog__article catArticle">
+      <div class="catArticle__level2Heading primaryHeading">
+        <h2 class="primaryHeading__inner">
+          <a class="primaryHeading__link" href="#">初めて猫を飼う人必見！猫を飼うときに必要なもの</a>
+        </h2>
+      </div>
+
+      <div class="catArticle__thumb">
+        <img class="catArticle__image0101" src="images/cat1.jpg" alt="写真：子猫">
+
+        <time class="catArticle__date" datetime="2021-12-28">
+          <span class="catArticle__year">2021</span>
+          12/28
+        </time>
+      </div><!-- /.catArticle__thumb -->
+
+      <p class="catArticle__text">猫を飼い始めることになったら、まず何が必要なのでしょうか？ 必ず必要になるグッズと、あると便利な猫グッズを紹介します。 猫はこれからの10数年、ともに生きていく家族の一員です。気持ちよく生活をスタートできるよう、 事前にしっかりと準備しておきましょう！ おすすめキャットフードランキングもまとめました！</p>
+
+      <p class="catArticle__link">
+        <a class="moreLink" href="#">続きを読む</a>
+      </p>
+    </article>
+
+    <article class="catBlog__article catArticle">
+      <div class="catArticle__level2Heading primaryHeading">
+        <h2 class="primaryHeading__inner">
+          <a class="primaryHeading__link" href="#">初めて猫を飼う人必見！猫を飼うときに必要なもの</a>
+        </h2>
+      </div>
+
+      <div class="catArticle__thumb">
+        <time class="catArticle__date" datetime="2021-12-28">
+          <span class="catArticle__year">2021</span>
+          12/28
+        </time>
+
+        <img class="catArticle__image01" src="images/cat2.jpg" alt="写真：子猫">
+      </div><!-- /.catArticle__thumb -->
+
+      <p class="catArticle__text">猫を飼い始めることになったら、まず何が必要なのでしょうか？ 必ず必要になるグッズと、あると便利な猫グッズを紹介します。 猫はこれからの10数年、ともに生きていく家族の一員です。気持ちよく生活をスタートできるよう、 事前にしっかりと準備しておきましょう！ おすすめキャットフードランキングもまとめました！</p>
+
+      <p class="catArticle__link">
+        <a class="moreLink" href="#">続きを読む</a>
+      </p>
+    </article>
+
+    <article class="catBlog__article catArticle">
+      <div class="catArticle__level2Heading primaryHeading">
+        <h2 class="primaryHeading__inner">
+          <a class="primaryHeading__link" href="#">初めて猫を飼う人必見！猫を飼うときに必要なもの</a>
+        </h2>
+      </div>
+
+      <div class="catArticle__thumb">
+        <img class="catArticle__image01" src="images/cat3.jpg" alt="写真：子猫">
+
+        <time class="catArticle__date" datetime="2021-12-28">
+          <span class="catArticle__year">2021</span>
+          12/28
+        </time>
+      </div><!-- /.catArticle__thumb -->
+
+      <p class="catArticle__text">猫を飼い始めることになったら、まず何が必要なのでしょうか？ 必ず必要になるグッズと、あると便利な猫グッズを紹介します。 猫はこれからの10数年、ともに生きていく家族の一員です。気持ちよく生活をスタートできるよう、 事前にしっかりと準備しておきましょう！ おすすめキャットフードランキングもまとめました！</p>
+
+      <p class="catArticle__link">
+        <a class="moreLink" href="#">続きを読む</a>
+      </p>
+    </article>
+
+    <article class="catBlog__article catArticle">
+      <div class="catArticle__level2Heading primaryHeading">
+        <h2 class="primaryHeading__inner">
+          <a class="primaryHeading__link" href="#">初めて猫を飼う人必見！猫を飼うときに必要なもの</a>
+        </h2>
+      </div>
+
+      <div class="catArticle__thumb">
+        <img class="catArticle__image01" src="images/cat4.jpg" alt="写真：子猫">
+
+        <time class="catArticle__date" datetime="2021-12-28">
+          <span class="catArticle__year">2021</span>
+          12/28
+        </time>
+      </div><!-- /.catArticle__thumb -->
+
+      <p class="catArticle__text">猫を飼い始めることになったら、まず何が必要なのでしょうか？ 必ず必要になるグッズと、あると便利な猫グッズを紹介します。 猫はこれからの10数年、ともに生きていく家族の一員です。気持ちよく生活をスタートできるよう、 事前にしっかりと準備しておきましょう！ おすすめキャットフードランキングもまとめました！</p>
+
+      <p class="catArticle__link">
+        <a class="moreLink" href="#">続きを読む</a>
+      </p>
+    </article>
+
+    <ul class="pagination">
+      <li class="pagination__item">
+        <span class="pagination__current">1</span>
+      </li>
+
+      <li class="pagination__item">
+        <a class="pagination__link" href="#">2</a>
+      </li>
+
+      <li class="pagination__item">
+        <a class="pagination__link" href="#">3</a>
+      </li>
+
+      <li class="pagination__item">
+        <a class="pagination__link" href="#">4</a>
+      </li>
+
+      <li class="pagination__item">
+        <a class="pagination__link" href="#">&gt;</a>
+      </li>
+    </ul>
+  </main>
+
+  <%- include('components/common/_sidebar.ejs', {element: 'catBlog__sidebar'}) %>
+</div><!-- /.catBlog__container -->
+
+
+<%- include('components/common/_footer.ejs') %>
+
+</body>
+</html>

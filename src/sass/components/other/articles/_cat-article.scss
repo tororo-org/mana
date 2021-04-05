@@ -1,0 +1,182 @@
+// 記事・猫
+
+
+// ミックスイン
+@use "../../../global" as g;
+
+
+.catArticle {
+
+  &__level2Heading {
+    margin-bottom: 1.5rem;
+  }
+
+  &__level3Heading {
+    padding: 0.77rem;
+    border-top: dotted 2px #ccc;
+    border-bottom: dotted 2px #ccc;
+    margin: 3rem 0 1rem;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.4;
+  }
+
+  &__level4Heading {
+    margin-bottom: 1rem;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 1.5em;
+    font-weight: 500;
+  }
+
+  &__level5Heading {
+    margin-bottom: 1rem;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 1.375em;
+    font-weight: 500;
+  }
+
+  &__level6Heading {
+    margin: 3rem 0 1rem;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 1.25em;
+    font-weight: 500;
+
+  }
+
+  &__thumb {
+    position: relative;
+    margin-bottom: 1rem;
+  }
+
+  &__image01 {
+    width: 100%;
+    height: 260px;
+    border-radius: 40% 70% 50% 30% / 50%;
+    object-fit: cover;
+    font-family: "object-fit: cover;";
+  }
+
+  &__image02 {
+    width: 100%;
+    margin-bottom: 3rem;
+    border-radius: 50px;
+  }
+
+  &__date {
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 80px;
+    height: 80px;
+    border-radius: 30% 60% 50% 70% / 50%;
+    background-color: #93d8d0;
+    color: #fff;
+    font-family: 'Amatic SC', cursive;
+    font-size: 1.5rem;
+    line-height: 1.6;
+    text-align: center;
+    letter-spacing: 0.1rem;
+  }
+
+  &__year {
+    display: block;
+    width: 60%;
+    padding-bottom: 2px;
+    border-bottom: dotted 2px rgba(255,255,255,0.5);
+    margin: 4px auto 0;
+    font-size: 1rem;
+  }
+
+  &__text {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    text-align: justify;
+    text-justify: inter-ideograph;
+  }
+
+  &__link {
+    text-align: right;
+  }
+
+  &__necessaryItem {
+    margin-bottom: 0.5rem;
+
+    &::before {
+      content: '';
+      display: inline-block;
+      width: 0.5rem;
+      height: 0.5rem;
+      margin: 0px 8px 2px 0;
+      border-radius: 50%;
+      background-color: #93d8d0;
+    }
+  }
+
+  &__foodList {
+    margin-bottom: 3rem;
+  }
+
+  &__foodItem {
+    margin-bottom: 0.5rem;
+    counter-increment: num;
+
+    &::before {
+      content: counter(num);
+      margin-right: 8px;
+      color: #93d8d0;
+    }
+  }
+
+  &__foodLink {
+    text-decoration: underline;
+    color: #93d8d0;
+
+    &:hover {
+      color: #7ac69f;
+    }
+  }
+
+  &__quote {
+    position: relative;
+    padding: 1rem 3rem;
+    margin-bottom: 1rem;
+
+    &::before,
+    &::after {
+      position: absolute;
+      font-family: georgia, serif;
+      font-size: 6rem;
+      line-height: 0;
+      color: #ccc;
+    }
+
+    &::before {
+      content: "“";
+      top: 2.5rem;
+      left: 0;
+    }
+
+    &::after {
+      content: "\201D";
+      bottom: 0.5rem;
+      right: 0;
+    }
+  }
+
+
+
+  @include g.mq(md-min) {
+    &__thumb {
+      float: left;
+      shape-outside: circle();
+      margin-right: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    &__image01 {
+      width: 220px;
+      height: 180px;
+    }
+  }
+}

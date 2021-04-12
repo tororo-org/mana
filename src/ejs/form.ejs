@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<%- include('components/common/_head.ejs', {page_title: '応募フォーム'}) %>
+
+<body class="form">
+
+<%- include('components/common/_header2', {formModifier: 'gNav__link--current'}) %>
+
+
+<main class="primaryMain">
+  <h2 class="primaryMain__lv1Heading secondaryHeading secondaryHeading--center">応募フォーム</h2>
+
+  <p class="primaryMain__topText">下記の応募フォームにすべてご記入の上、送信してください。</p>
+
+  <p class="primaryMain__notice">※ファイルの添付はできません。作品のファイルがある場合は必ずアップロードしたURLをご記入ください。</p>
+
+  <form class="primaryMain__form applyForm" action="#" method="post" enctype="application/x-www-form-urlencoded">
+    <table class="applyForm__table">
+      <tr class="applyForm__row">
+        <th class="applyForm__header">お名前</th>
+        <td class="applyForm__data">
+          <input class="applyForm__input" type="text" name="name" placeholder="例：大木真奈美">
+        </td>
+      </tr>
+
+      <tr class="applyForm__row">
+        <th class="applyForm__header">フリガナ</th>
+        <td class="applyForm__data">
+          <input class="applyForm__input" type="text" name="nameRuby" placeholder="例：オオモトマナミ">
+        </td>
+      </tr>
+
+      <tr class="applyForm__row">
+        <th class="applyForm__header">メールアドレス</th>
+        <td class="applyForm__data">
+          <input class="applyForm__input" type="email" name="email" placeholder="例：hello@example.com">
+        </td>
+      </tr>
+
+      <tr class="applyForm__row">
+        <th class="applyForm__header">ポートフォリオ</th>
+        <td class="applyForm__data">
+          <input class="applyForm__input" type="url" name="url" placeholder="例：http://example.com">
+        </td>
+      </tr>
+
+      <tr class="applyForm__row">
+        <th class="applyForm__header">希望勤務地</th>
+        <td class="applyForm__data">
+          <label class="applyForm__label">
+            <input class="applyForm__checkbox" type="checkbox" name="workPlace[]" value="東京"><span class="applyForm__labelText">東京</span>
+          </label>
+
+          <label class="applyForm__label">
+            <input class="applyForm__checkbox" type="checkbox" name="workPlace[]" value="大阪"><span class="applyForm__labelText">大阪</span>
+          </label>
+
+          <label class="applyForm__label">
+            <input class="applyForm__checkbox" type="checkbox" name="workPlace[]" value="リモート勤務"><span class="applyForm__labelText">リモート勤務</span>
+          </label>
+        </td>
+      </tr>
+
+      <tr class="applyForm__row">
+        <th class="applyForm__header">現在の状態</th>
+        <td class="applyForm__data">
+          <div class="applyForm__selectWrapper">
+            <select class="applyForm__select" name="nowStatus">
+              <option value="会社に在籍中">会社に在籍中</option>
+              <option value="フリーランス">フリーランス</option>
+              <option value="学生">学生</option>
+              <option value="休職中">休職中</option>
+            </select>
+          </div><!-- /.applyForm__selectWrapper -->
+        </td>
+      </tr>
+
+      <tr class="applyForm__row">
+        <th class="applyForm__header">自己PR</th>
+        <td class="applyForm__data">
+          <textarea class="applyForm__textarea" name="message" placeholder="例：これまでの経歴、学んできたこと、今取り組んでいるプロジェクト等"></textarea>
+        </td>
+      </tr>
+    </table>
+
+    <p class="applyForm__btnWrapper">
+      <input class="applyForm__btn jobBtn jobBtn--primary" type="submit" name="send" value="送信する">
+    </p>
+  </form>
+</main>
+
+
+<%- include('components/common/_footer2.ejs') %>
+
+</body>
+</html>

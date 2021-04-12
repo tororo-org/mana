@@ -6,16 +6,22 @@
 @use "bases/_bases.scss";
 
 
+// レイアウト
+@use "layouts/_layouts.scss";
+
+
 // コンポーネント・パーツ
 // 見出し
 @use "components/parts/headings";
-// リンク
-@use "components/parts/links";
+// ボタン
+@use "components/parts/btns";
 
 
 // コンポーネント・共通
 // ヘッダー
 @use "components/common/_header.scss";
+// グローバルナビゲーション
+@use "components/common/gnav";
 // ページネーション
 @use "components/common/pagination";
 // サイドバー
@@ -23,15 +29,34 @@
 // フッター
 @use "components/common/footer";
 // SNS
-// @use "components/common/_sns.scss";
+@use "components/common/_sns.scss";
 
 
 // コンポーネント・その他
-// 記事
+// メイン・募集要項
+@use "components/other/mains/_primary-main";
+// 記事・猫
 @use "components/other/articles/_cat-article.scss";
+// セクション・グラフ
+@use "components/other/sections/chart-section";
+// ヒーローイメージ・プライマリ
+@use "components/other/heroes/primary-hero";
+// 表・募集要項
+@use "components/other/tables/_recruit-table";
+// フォーム・応募
+@use "components/other/forms/apply-form";
+// タイムライン・採用
+@use "components/other/timelines/recruit-timeline.scss";
+
 
 
 // ページ
 // ベーカリー
 // @use "pages/bakery";
 @use "pages/_blog";
+// コーポレート
+@use "pages/corporate";
+// 募集要項
+@use "pages/job";
+// 応募フォーム
+@use "pages/_form.scss";

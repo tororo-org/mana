@@ -1,0 +1,79 @@
+// グローバルナビゲーション
+
+// ミックスイン
+@use "../../global" as g;
+
+
+.gNav {
+
+  &__list {
+    display: flex;
+  }
+
+  &__link {
+    display: block;
+    width: 4rem;
+    padding: 0.5rem;
+    font-size: 0.75rem;
+    text-align: center;
+
+    &::before {
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      display: block;
+      margin-bottom: 0.25rem;
+      font-size: 1.25rem;
+    }
+
+    &--home {
+      &::before {
+        content: "\f015";
+      }
+    }
+
+    &--job {
+      &::before {
+        content: "\f0ca";
+      }
+    }
+
+    &--form {
+      &::before {
+        content: "\f56e";
+      }
+    }
+
+    &--current {
+      background-color: #f8f6f2;
+    }
+  }
+
+
+  @include g.mq(md-min) {
+    &__item {
+      & + & {
+        margin-left: 2rem;
+      }
+    }
+
+    &__link {
+      width: auto;
+      font-family: 'Sawarabi Mincho', sans-serif;
+      font-size: 1.25rem;
+
+      &--current,
+      &:hover {
+        background-color: initial;
+        border-bottom: solid 2px #2d3374;
+      }
+
+      &:hover {
+        border-bottom: solid 2px #2d3374;
+      }
+
+      &::before {
+        content: "";
+      }
+    }
+  }
+}

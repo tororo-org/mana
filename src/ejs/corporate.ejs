@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<%- include('components/common/_head.ejs', {page_title: 'トップページ'}) %>
+
+
+<body class="corporate">
+
+<%- include('components/common/_header2.ejs', {homeModifier: 'gNav__link--current'}) %>
+
+<%- include('components/other/_primary-hero.ejs', {layout: 'corporate__hero l-wrapper'}) %>
+
+
+<section class="chartSection chartSection--reverse">
+  <div class="chartSection__wrapper chartSection__wrapper--reverse l-wrapper">
+    <div class="chartSection__content">
+      <h2 class="chartSection__heading secondaryHeading">Webデザイナーの活躍する職場です</h2>
+
+      <p class="chartSection__text">
+        制作チームではWebデザイナーが一番多く在籍しています。
+        ただ機能する制作物を作るのではなく、使い勝手がよく美しいものを生み出していきます。
+        あなたも、誰かの世界が変わるようなクリエイティブなWebサイトを 世界中に広めませんか？
+      </p>
+    </div><!-- /.chartSection__content -->
+
+    <div class="chartSection__pieChart"></div>
+  </div><!-- /.chartSection__wrapper.l-wrapper -->
+</section>
+
+<section class="chartSection l-wrapper">
+  <div class="chartSection__wrapper l-wrapper">
+    <div class="chartSection__content">
+      <h2 class="chartSection__heading secondaryHeading">あなたの生活にあわせたスタイルで働けます</h2>
+
+      <p class="chartSection__text">
+        弊社では東京、大阪のオフィスの他、リモート勤務も可能です。
+        リモート勤務で活躍している社員は全体の3分の1となり、年々増加しています。
+        自宅やコワーキングスペースなど、あなたの一番集中できる場所で仕事に取り組んでください。
+      </p>
+    </div><!-- /.chartSection__content -->
+
+    <div class="chartSection__chart">
+      <div class="chartSection__barChart"></div>
+
+      <p class="chartSection__chartCaption">リモート社員数の推移</p>
+    </div>
+  </div><!-- /.chartSection__wrapper.l-wrapper -->
+</section>
+
+
+<%- include('components/common/_footer2.ejs', {linkText: '募集要項を見る'}) %>
+
+<%- include('components/common/_script') %>
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+// ヒーローイメージ
+
+
+// ミックスイン
+@use "../../../global" as g;
+
+
+// プライマリ
+.primaryHero {
+  padding-top: 5.5rem;
+  padding-bottom: 3rem;
+  background-image: url(../images/bg-hero.jpg);
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: 70vw;
+
+  &__heading {
+    display: inline-block;
+    margin: 8vw 0 12vw;
+    padding: 1rem;
+    font-family: 'Sawarabi Mincho', sans-serif;
+    font-size: 1.5rem;
+    background-color: rgba(255,255,255,0.8);
+  }
+
+  &__lead {
+    margin-bottom: 2rem;
+    font-size: 1.125rem;
+    line-height: 1.7;
+  }
+
+
+  @include g.mq(md-min) {
+    padding-top: 16vw;
+    padding-bottom: 16vw;
+
+    &__heading {
+      margin: 0 0 2rem;
+      padding: 0;
+      font-size: 2.5rem;
+      background-color: transparent;
+    }
+
+    &__lead {
+      width: 38vw;
+    }
+
+    &__link {
+      display: inline-block;
+    }
+  }
+}

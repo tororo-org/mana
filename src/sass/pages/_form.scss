@@ -1,0 +1,22 @@
+// ページ・応募フォーム
+
+.form {
+  background-image:
+    url(../images/bg-form.jpg),
+    linear-gradient(
+      to bottom,
+      transparent 0%,
+      transparent 50%,
+      #f8f6f2 50%,
+      #f8f6f2 100%
+    );
+  background-repeat: no-repeat;
+  background-position:  right 106px, left top;
+  background-size: 70%, contain;
+
+  .footer2 {
+    &__btn {
+      display: none;
+    }
+  }
+}

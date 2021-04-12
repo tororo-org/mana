@@ -1,0 +1,16 @@
+// ページ・募集要項
+
+.job {
+  background-image:
+    url(../images/bg-job.jpg),
+    linear-gradient(
+      to bottom,
+      transparent 0%,
+      transparent 50%,
+      #f8f6f2 50%,
+      #f8f6f2 100%
+    );
+  background-repeat: no-repeat;
+  background-position:  0 106px, top left;
+  background-size: 70%, contain;
+}

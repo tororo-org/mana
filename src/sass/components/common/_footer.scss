@@ -1,5 +1,10 @@
 // フッター
 
+
+// ミックスイン
+@use "../../global" as g;
+
+
 .footer {
   padding: 3rem;
   background-color: #949087;
@@ -29,6 +34,54 @@
 
     &Text {
       font-size: 0.875rem;
+    }
+  }
+}
+
+
+
+.footer2 {
+  padding: 3.5rem 1rem;
+  text-align: center;
+  background-color: #2d3374;
+
+  &__btn {
+    margin-bottom: 4.5rem;
+  }
+
+  &__nav {
+
+    &Item {
+      margin: 1rem 0;
+    }
+
+    &Link {
+      color: #d5d7e4;
+    }
+  }
+
+
+  @include g.mq(md-min) {
+    &__btn {
+      display: inline-block;
+      margin-bottom: 3.5rem;
+    }
+
+    &__nav {
+      &List {
+        display: flex;
+        justify-content: center;
+      }
+
+      &Item {
+        margin: 0 0.75rem;
+      }
+
+      &Link {
+        &:hover {
+          color: #fff;
+        }
+      }
     }
   }
 }

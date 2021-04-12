@@ -1,0 +1,69 @@
+// メイン・募集要項
+
+
+// ミックスイン
+@use "../../../global" as g;
+
+
+.primaryMain {
+  position: relative;
+  width: 94%;
+  max-width: 900px;
+  padding: 3rem 2rem;
+  margin: 6.25rem auto;
+  background-color: #fff;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+
+  &__lv1Heading {
+    margin-bottom: 2.5rem;
+  }
+
+  &__lv2Heading {
+    margin-bottom: 2.5rem;
+  }
+
+  &__lead {
+    margin-bottom: 3.5rem;
+    line-height: 1.7;
+  }
+
+  &__topText {
+    line-height: 1.7;
+  }
+
+  &__notice {
+    margin-bottom: 3.5rem;
+    font-size: 0.875rem;
+    line-height: 1.7;
+  }
+
+  &__table {
+    width: 100%;
+    margin-bottom: 3.5rem;
+  }
+
+  &__btnWrapper {
+    margin-bottom: 4rem;
+  }
+
+  &__btn {
+    line-height: 1.7;
+  }
+
+
+  @include g.mq(md-min) {
+    padding: 5rem;
+
+    &__lv2Heading {
+      margin-bottom: 4.5rem;
+    }
+
+    &__btnWrapper {
+      text-align: center;
+    }
+
+    &__btn {
+      display: inline-block;
+    }
+  }
+}

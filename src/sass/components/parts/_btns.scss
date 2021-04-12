@@ -1,1 +1,46 @@
 // パーツ・ボタン
+
+// 続きを読む
+.moreBtn {
+  display: inline-block;
+  padding: 10px 20px;
+  line-height: 1.6;
+  border: dashed 2px #e38787;
+  border-radius: 5px;
+  box-shadow: 0 0 0 5px #eda1a1;
+  background-color: #eda1a1;
+  color: #fff;
+
+  &:hover {
+    border-color: #eda1a1;
+    box-shadow: 0 0 0 5px #e38787;
+    background-color: #e38787;
+  }
+}
+
+
+// 募集要項を見る
+.jobBtn {
+  display: block;
+  padding: 1.25rem 3.25rem;
+  font-family: 'Sawarabi Mincho', sans-serif;
+  font-size: 1.375rem;
+  text-align: center;
+
+  &--primary {
+    background-color: #2d3374;
+    color: #fff;
+
+    &:hover {
+      background-color: #3a7edf;
+    }
+  }
+
+  &--secondary {
+    background-color: #d0bea2;
+
+    &:hover {
+      background-color: #d9cebe;
+    }
+  }
+}

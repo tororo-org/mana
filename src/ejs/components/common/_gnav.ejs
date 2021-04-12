@@ -1,0 +1,29 @@
+<%
+  if (typeof homeModifier === 'undefined') {
+    var homeModifier = '';
+  }
+
+  if (typeof jobModifier === 'undefined') {
+    var jobModifier = '';
+  }
+
+  if (typeof formModifier === 'undefined') {
+    var formModifier = '';
+  }
+%>
+
+<nav class="gNav">
+  <ul class="gNav__list">
+    <li class="gNav__item">
+      <a class="gNav__link gNav__link--home <%- homeModifier %>" href="index.html">ホーム</a>
+    </li>
+
+    <li class="gNav__item">
+      <a class="gNav__link gNav__link--job <%- jobModifier %>" href="job.html">募集要項</a>
+    </li>
+
+    <li class="gNav__item">
+      <a class="gNav__link gNav__link--form <%- formModifier %>" href="form.html">応募</a>
+    </li>
+  </ul>
+</nav>

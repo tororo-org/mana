@@ -1,0 +1,46 @@
+// 表・募集要項
+
+
+// ミックスイン
+@use "../../../global" as g;
+
+
+.recruitTable {
+
+  &__header,
+  &__data {
+    display: block;
+  }
+
+  &__header {
+    padding: 1rem;
+    background-color: #f8f6f2;
+    font-weight: normal;
+  }
+
+  &__data {
+    padding: 0.75rem 1rem 1.7rem;
+    line-height: 1.7;
+  }
+
+
+  @include g.mq(md-min) {
+    &__row {
+      &:nth-child(odd) {
+        background-color: #f8f6f2;
+      }
+    }
+
+    &__header,
+    &__data {
+      display: table-cell;
+      padding: 1.25rem;
+    }
+
+    &__header {
+      width: 24%;
+      vertical-align: middle;
+      background-color: transparent;
+    }
+  }
+}

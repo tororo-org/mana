@@ -4,8 +4,15 @@ html {
   font-size: 100%;
 }
 
-body {
+.catBlog {
   background-image: url(../images/bg.png);
   font-family: sans-serif;
   color: #949087;
+}
+
+.corporate,
+.job,
+.form {
+  font-family: sans-serif;
+  color: #555;
 }

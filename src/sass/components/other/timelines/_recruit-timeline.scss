@@ -1,0 +1,87 @@
+// タイムライン・採用
+
+
+// ミックスイン
+@use "../../../global" as g;
+
+
+.recruitTimeline {
+
+  &__item {
+    margin-bottom: 2rem;
+    list-style-type: decimal;
+    list-style-position: inside;
+    font-family: 'Sawarabi Mincho', sans-serif;
+  }
+
+  &__heading {
+    display: inline-block;
+    margin-bottom: 1rem;
+    font-size: 1.375rem;
+  }
+
+  &__text {
+    font-family: sans-serif;
+    line-height: 1.7;
+  }
+
+
+  @include g.mq(md-min) {
+    &__item {
+      margin-bottom: 0;
+      display: flex;
+    }
+
+    &__heading {
+      width: 24%;
+      padding: 2rem 2.5rem 2rem 0;
+      text-align: right;
+    }
+
+    &__text {
+      position: relative;
+      width: 76%;
+      padding: 1.5rem 0 1.5rem 2.5rem;
+      border-left: 5px solid #f8f6f2;
+
+      &::before {
+        position: absolute;
+        top: 1.5rem;
+        left: -1.5rem;
+        width: 2.25rem;
+        height: 2.25rem;
+        padding: 0.1rem;
+        text-align: center;
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        font-size: 1.25rem;
+        background-color: #d0bea2;
+        color: #fff;
+      }
+
+      &--fileIcon {
+        &::before {
+          content: "\f56e";
+        }
+      }
+
+      &--codeIcon {
+        &::before {
+          content: "\f121";
+        }
+      }
+
+      &--chatIcon {
+        &::before {
+          content: "\f086";
+        }
+      }
+
+      &--handshakeIcon {
+        &::before {
+          content: "\f2b5";
+        }
+      }
+    }
+  }
+}

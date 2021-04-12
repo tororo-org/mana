@@ -1,0 +1,99 @@
+// セクション・グラフ
+
+
+// ミックスイン
+@use "../../../global" as g;
+
+
+.chartSection {
+  padding: 4rem 0;
+
+  &--reverse {
+    background-color: #f8f6f2;
+  }
+
+  &__content {
+    margin-bottom: 2rem;
+  }
+
+  &__heading {
+    margin-bottom: 2.5rem;
+  }
+
+  &__text {
+    line-height: 1.7;
+  }
+
+
+  // 円グラフ
+  .ct-series-a .ct-slice-pie {
+    fill: #2d3374;
+  }
+
+  .ct-series-b .ct-slice-pie {
+    fill: #3a7edf;
+  }
+
+  .ct-series-c .ct-slice-pie {
+    fill: #9bcbf8;
+  }
+
+  .ct-series-d .ct-slice-pie {
+    fill: #bbb;
+  }
+
+  .ct-label {
+    font-size: 1rem;
+    fill: #fff;
+  }
+
+
+  // 棒グラフ
+  &__barChart {
+    // margin-bottom: 0.5rem;
+  }
+
+  .ct-bar {
+    stroke-width: 16%;
+  }
+
+  .ct-series-a .ct-bar {
+    stroke: #3a7edf;
+  }
+
+  &__chartCaption {
+    line-height: 1.7;
+    text-align: center;
+  }
+
+
+  @include g.mq(md-min) {
+    &__wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      &--reverse {
+        flex-direction: row-reverse;
+      }
+    }
+
+    &__content {
+      width: 50vw;
+      margin-bottom: 0;
+    }
+
+    &__pieChart,
+    &__chart {
+      width: 34vw;
+    }
+
+    &__pieChart {
+      margin-right: 2vw;
+    }
+
+    &__chart {
+      margin-left: 2vw;
+    }
+  }
+}

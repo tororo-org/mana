@@ -4,6 +4,40 @@
 @use "../../global" as g;
 
 
+.header2 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__logo {
+    width: 7.5rem;
+  }
+
+
+  @include g.mq(md-min) {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+    &__logo {
+      width: 12.5rem;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 .header {
   max-width: 1000px;
   margin: 2.5rem auto 0;

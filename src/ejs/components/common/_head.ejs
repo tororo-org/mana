@@ -1,9 +1,9 @@
 <%
-  if (page_title === 'undefined') {
+  if (typeof page_title === 'undefined') {
     var page_title = '';
   }
 
-  if (data === 'undefined') {
+  if (typeof data === 'undefined') {
     var data = {
       head: 'default',
       body: 'default'
@@ -30,7 +30,7 @@
 <meta name="author" content="<%- author %>">
 <meta name="robots" content="<%- robots %>">
 
-<link rel="icon" type="image/svg+xml" href="images/favicon3.svg">
+<link rel="icon" type="image/svg+xml" href="images/favicon4.svg">
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@2.0.2/destyle.min.css">
 

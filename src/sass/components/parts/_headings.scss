@@ -64,3 +64,44 @@
     font-size: 1.875rem;
   }
 }
+
+
+// ターシャリ
+.tertiaryHeading {
+  font-family: impact, serif;
+  font-size: 3rem;
+  text-align: center;
+
+  &--orange,
+  &--blue {
+    background-clip: text;
+    // color: transparent;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+  }
+
+  &--orange {
+    background-image: linear-gradient(
+      180deg,
+      var(--yellow) 0%,
+      var(--orange) 100%
+    );
+  }
+
+  &--blue {
+    background-image: linear-gradient(
+      180deg,
+      var(--lightBlue),
+      var(--blue)
+    );
+  }
+
+  &--white {
+    color: var(--white);
+  }
+
+
+  @include g.mq(md-min) {
+    font-size: 5rem;
+  }
+}

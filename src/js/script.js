@@ -34,3 +34,20 @@ var options = {
 };
 
 new Chartist.Bar('.chartSection__barChart', data, options);
+
+
+
+
+// グローバルナビゲーションの開閉
+
+window.onload = function () {
+  document.getElementById('js-gNav2__btn').addEventListener('click', function () {
+    document.querySelector('.gNav2__list').classList.toggle('is-gNavOpen');
+
+    if (this.innerText === 'Menu') {
+      this.innerText = 'Close';
+    } else {
+      this.innerText = 'Menu';
+    }
+  });
+};

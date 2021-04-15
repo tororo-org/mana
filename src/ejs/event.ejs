@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<%- include('components/common/_head', {page_title: 'WCB Conference'}) %>
+
+<body class="event">
+
+<%- include('components/common/_header3.ejs', {layout: 'l-wrapper l-wrapper--md'}) %>
+
+<%- include('components/other/_hero-header', {layout: 'l-wrapper l-wrapper--md'}) %>
+
+
+<section class="aboutSection l-wrapper l-wrapper--md" id="about">
+  <h2 class="aboutSection__heading tertiaryHeading tertiaryHeading--orange">About</h2>
+
+  <p class="aboutSection__text">
+    WCB Conferenceとは、Webサイト制作を学びたい人たちが集まる勉強会です。 オンラインで開催しているので、世界中どこにいても参加できます。 最新のWebサイト制作やデザイントレンドを紹介し、それらの知識について参加者が話し合う時間も設けています。 一人で勉強を続けるだけでなく、仲間と交流しながら新しい可能性を一緒に探していきましょう。
+  </p>
+
+  <img class="aboutSection__image" src="images/computer.jpg" alt="写真：机上のノートパソコンと水が入ったガラスコップとメモ帳">
+</section>
+
+<section class="newsSection" id="news">
+  <div class="newsSection__wrapper l-wrapper l-wrapper--md">
+    <h2 class="newsSection__heading tertiaryHeading tertiaryHeading--white">News</h2>
+
+    <table class="newsSection__table newsTable">
+      <tr class="newsTable__row">
+        <td class="newsTable__date"><time datetime="2021-10-16">2021年10月16日</time></td>
+        <td class="newsTable__data">参加登録を開始しました</td>
+      </tr>
+
+      <tr class="newsTable__row">
+        <td class="newsTable__date"><time datetime="2021-10-10">2021年10月10日</time></td>
+        <td class="newsTable__data">WCB Conferenceの登壇者が決定しました</td>
+      </tr>
+
+      <tr class="newsTable__row">
+        <td class="newsTable__date"><time datetime="2021-10-02">2021年10月2日</time></td>
+        <td class="newsTable__data">WCB ConferenceのWebサイトをリニューアルしました</td>
+      </tr>
+
+      <tr class="newsTable__row">
+        <td class="newsTable__date"><time datetime="2021-9-28">2021年9月28日</time></td>
+        <td class="newsTable__data">WCB Conference開催決定！</td>
+      </tr>
+    </table>
+  </div><!-- /.newsSection__wrapper.l-wrapper l-wrapper--md -->
+</section>
+
+<section class="speakersSection l-wrapper l-wrapper--md" id="speakers">
+  <h2 class="speakersSection__heading tertiaryHeading tertiaryHeading--blue">Speakers</h2>
+
+  <div class="speakersSection__speaker">
+    <div class="speakersSection__profile">
+      <h3 class="speakersSection__name">Mana</h3>
+
+      <p class="speakersSection__text">
+        日本で2年間グラフィックデザイナーとして働いた後、カナダ・バンクーバーにあるWeb制作の学校を卒業。カナダやオーストラリア、イギリスの企業でWebデザイナーとして働きました。 現在はWebサイト制作のインストラクターとして教育関連を頑張ってます。
+      </p>
+    </div><!-- /.speakersSection__profile -->
+
+    <img class="speakersSection__image" src="images/mana.jpg" alt="写真：話し手">
+  </div><!-- /.speakersSection__speaker -->
+
+  <div class="speakersSection__speaker">
+    <div class="speakersSection__profile">
+      <h3 class="speakersSection__name">Tatsuya</h3>
+
+      <p class="speakersSection__text">
+        株式会社Sample Web代表。学生時代より独学でWebサイト制作を学び、 デザイナーの働きやすい環境を求めて独立。音楽・アート関連のWebサイト制作やアプリ制作をはじめ、イベントの主催や登壇なども行っています。
+      </p>
+    </div><!-- /.speakersSection__profile -->
+
+    <img class="speakersSection__image" src="images/tatsuya.jpg" alt="写真：話し手">
+  </div><!-- /.speakersSection__speaker -->
+</section>
+
+<section class="ticketSection" id="ticket">
+  <h2 class="ticketSection__heading tertiaryHeading tertiaryHeading--white">Ticket</h2>
+
+  <form class="ticketSection__form" action="#" method="post" enctype="x-www-form-urlencoded">
+    <label class="ticketSection__label" for="name">Name</label>
+    <input class="ticketSection__input" id="name" type="text" name="name" placeholder="例：大本真奈美">
+
+    <label class="ticketSection__label" for="email">Email</label>
+    <input class="ticketSection__input" id="email" type="email" name="email" placeholder="例：hello@example.com">
+
+    <input class="ticketSection__btn" type="submit" name="submit" value="Join Now!">
+  </form>
+
+
+  <%- include('components/common/_footer3.ejs', {layout: 'l-wrapper l-wrapper--md'}) %>
+</section>
+
+
+<%- include('components/common/_script') %>
+
+</body>
+</html>

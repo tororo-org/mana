@@ -1,5 +1,9 @@
 // 変数
-// @use "settings/_variables.scss";
+@use "settings/_variables.scss";
+
+
+// アニメーションキーフレーム
+@use "tools/keyframes";
 
 
 // ベース
@@ -39,20 +43,32 @@
 @use "components/other/articles/_cat-article.scss";
 // セクション・グラフ
 @use "components/other/sections/chart-section";
+// セクション・About
+@use "components/other/sections/_about-section.scss";
+// セクション・News
+@use "components/other/sections/_news-section.scss";
+// セクション・Speakers
+@use "components/other/sections/_speakers-section.scss";
+// セクション・Ticket
+@use "components/other/sections/_ticket-section.scss";
 // ヒーローイメージ・プライマリ
 @use "components/other/heroes/primary-hero";
+// ヒーローヘッダー
+@use "components/other/hero-headers/_primary-hero-header.scss";
 // 表・募集要項
 @use "components/other/tables/_recruit-table";
+// 表・News
+@use "components/other/tables/news-table";
 // フォーム・応募
 @use "components/other/forms/apply-form";
 // タイムライン・採用
 @use "components/other/timelines/recruit-timeline.scss";
 
 
-
 // ページ
 // ベーカリー
-// @use "pages/bakery";
+@use "pages/bakery";
+// ブログ
 @use "pages/_blog";
 // コーポレート
 @use "pages/corporate";

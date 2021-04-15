@@ -2,17 +2,29 @@
 
 html {
   font-size: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: sans-serif;
 }
 
 .catBlog {
   background-image: url(../images/bg.png);
-  font-family: sans-serif;
   color: #949087;
 }
 
 .corporate,
 .job,
 .form {
-  font-family: sans-serif;
   color: #555;
+}
+
+.event {
+  color: var(--grey);
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
 }

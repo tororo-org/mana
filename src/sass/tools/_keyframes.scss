@@ -1,0 +1,32 @@
+// アニメーションキーフレーム
+
+// 色が変化する。
+@keyframes bgColorChange {
+  0% {
+    background-color: var(--lightBlue);
+  }
+  12.5% {
+    background-color: var(--blue);
+  }
+  25% {
+    background-color: var(--purple);
+  }
+  37.5% {
+    background-color: var(--pink);
+  }
+  50% {
+    background-color: var(--orange);
+  }
+  62.5% {
+    background-color: var(--yellow);
+  }
+  75% {
+    background-color: var(--lightGreen);
+  }
+  87.5% {
+    background-color: var(--green);
+  }
+  100% {
+    background-color: var(--lightBlue);
+  }
+}

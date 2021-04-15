@@ -2,7 +2,14 @@
 
 // ラッパー
 .l-wrapper {
-  max-width: 1200px;
   padding: 0 1rem;
   margin: 0 auto;
+
+  &--md {
+    max-width: 800px;
+  }
+
+  &--lg {
+    max-width: 1200px;
+  }
 }

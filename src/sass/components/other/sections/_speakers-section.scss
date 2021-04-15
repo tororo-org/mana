@@ -1,0 +1,55 @@
+// セクション・Speakers
+
+
+// ミックスイン
+@use "../../../global" as g;
+
+
+.speakersSection {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+
+  &__heading {
+    margin-bottom: 2rem;
+  }
+
+  &__speaker {
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  &__profile {
+    margin-left: 1rem;
+  }
+
+  &__image {
+    align-self: flex-start;
+    width: 20%;
+    border-radius: 50%;
+  }
+
+  &__name {
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+  }
+
+  &__text {
+    line-height: 1.7;
+  }
+
+
+  @include g.mq(md-min) {
+    &__heading {
+      margin-bottom: 4rem;
+    }
+
+    &__speaker {
+      margin-bottom: 3rem;
+    }
+
+    &__profile {
+      margin-left: 2rem;
+    }
+  }
+}

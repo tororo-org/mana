@@ -1,0 +1,47 @@
+// セクション・Ticket
+
+.ticketSection {
+  padding: 6rem 1rem 2rem;
+  background: linear-gradient(
+    180deg,
+    var(--pink) 0%,
+    var(--purple) 100%
+  );
+  clip-path: polygon(0% 0%, 100% 10%, 100% 100%, 0% 100%);
+
+  &__heading {
+    margin-bottom: 2rem;
+  }
+
+  &__form {
+    max-width: 480px;
+    margin: 0 auto 5rem;
+  }
+
+  &__label {
+    display: block;
+    color: var(--white);
+    margin-bottom: 0.5em;
+  }
+
+  &__input {
+    width: 100%;
+    padding: 1rem ;
+    margin-bottom: 1.5rem;
+    background-color: rgba(255, 255, 255, 0.6);
+  }
+
+  &__btn {
+    width: 100%;
+    padding: 1rem;
+    margin-top: 1rem;
+    text-align: center;
+    background-color: var(--grey);
+    color: var(--white);
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: var(--blue);
+    }
+  }
+}

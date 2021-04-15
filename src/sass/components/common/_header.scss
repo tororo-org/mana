@@ -1,41 +1,8 @@
 // ヘッダー
 
+
 // ミックスイン
 @use "../../global" as g;
-
-
-.header2 {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  &__logo {
-    width: 7.5rem;
-  }
-
-
-  @include g.mq(md-min) {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-
-    &__logo {
-      width: 12.5rem;
-    }
-  }
-}
-
-
-
-
-
-
-
-
-
-
-
 
 
 .header {
@@ -68,6 +35,54 @@
 
     &__text {
       font-size: 1.125rem;
+    }
+  }
+}
+
+
+
+.header2 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__logo {
+    width: 7.5rem;
+  }
+
+
+  @include g.mq(md-min) {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+    &__logo {
+      width: 12.5rem;
+    }
+  }
+}
+
+
+
+.header3 {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  padding: 1rem 0;
+  background-color: var(--grey);
+
+  &__link {
+    font-family: impact, sans-serif;
+    font-size: 1.5rem;
+    color: var(--white);
+  }
+
+
+  @include g.mq(md-min) {
+    &__wrapper {
+      display: flex;
+      justify-content: space-between;
     }
   }
 }

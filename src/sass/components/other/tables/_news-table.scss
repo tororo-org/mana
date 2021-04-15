@@ -1,0 +1,46 @@
+// 表・News
+
+
+// ミックスイン
+@use "../../../global/index" as g;
+
+
+.newsTable {
+  width: 100%;
+  color: var(--white);
+
+  &__row {
+    border-bottom: solid 1px rgba(255, 255, 255, 0.5);
+  }
+
+  &__date,
+  &__data {
+    display: block;
+    line-height: 1.5;
+  }
+
+  &__date {
+    padding: 1rem 1px 1px 1px;
+    font-size: 0.875rem;
+  }
+
+  &__data {
+    padding: 1px 1px 1rem 1px;
+  }
+
+
+  @include g.mq(md-min) {
+    &__date,
+    &__data {
+      display: table-cell;
+    }
+
+    &__date {
+      padding: 1.125rem 0 1rem 1rem;
+    }
+
+    &__data {
+      padding: 1rem 1rem 1rem 0;
+    }
+  }
+}

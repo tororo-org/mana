@@ -51,10 +51,14 @@
 @use "components/other/sections/_speakers-section.scss";
 // セクション・Ticket
 @use "components/other/sections/_ticket-section.scss";
+// リスト・写真
+@use "components/other/lists/_photo-list.scss";
 // ヒーローイメージ・プライマリ
 @use "components/other/heroes/primary-hero";
 // ヒーローヘッダー
 @use "components/other/hero-headers/_primary-hero-header.scss";
+// ヒーローヘッダー・セカンダリ
+@use "components/other/hero-headers/_secondary-hero-header.scss";
 // 表・募集要項
 @use "components/other/tables/_recruit-table";
 // 表・News

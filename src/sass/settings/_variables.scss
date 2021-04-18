@@ -13,3 +13,16 @@
   --grey: #333;
   --white: #fff;
 }
+
+
+.gallery {
+  --textColor: #333;
+  --bgColor: #fff;
+  --videoOpacity: 0.5;
+
+  @media (prefers-color-scheme: dark) {
+    --textColor: #ddd;
+    --bgColor: #000;
+    --videoOpacity: 0.7;
+  }
+}

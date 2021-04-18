@@ -51,3 +51,20 @@ window.onload = function () {
     }
   });
 };
+
+
+
+
+// ライトボックス・Luminous
+
+var options = {
+  caption: function (trigger) {
+    return trigger.querySelector('.photoList__image').getAttribute('alt');
+  }
+}
+
+new LuminousGallery(
+  document.querySelectorAll('.photoList__link'),
+  {},
+  options
+);

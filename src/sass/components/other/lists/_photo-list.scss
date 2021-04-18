@@ -1,0 +1,82 @@
+// リスト・写真
+
+
+// ミックスイン
+@use "../../../global" as g;
+
+
+.photoList {
+  width: 94vw;
+  margin: 0 auto 3vw;
+  display: grid;
+  grid-template-columns: 46vw 46vw;
+  grid-template-rows: repeat(8, 46vw);
+  gap: 2vw;
+
+  &__link {
+
+    &:nth-child(4) {
+      grid-column: 1 / 3;
+      grid-row: 2;
+    }
+
+    &:nth-child(10) {
+      grid-column: 1 / -1;
+    }
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    font-family: "object-fit: cover;";
+    filter: grayscale(100%);
+  }
+
+
+  @include g.mq(md-min) {
+    width: 80vw;
+    grid-template-columns: repeat(3, 26vw);
+    grid-template-rows: repeat(5, 26vw);
+    gap: 1vw;
+
+    &__link {
+
+      &:nth-child(10) {
+        grid-column: 2 / 4;
+      }
+    }
+
+    &__image {
+      transition: 0.3s;
+
+      &:hover {
+        z-index: 1;
+        transform: scale(1.1);
+        box-shadow: 0 0 2rem rgba(0 ,0, 0, 0.5);
+        filter: grayscale(0%);
+      }
+    }
+  }
+}
+
+
+
+
+// ライトボックス・Luminous
+
+.lum-lightbox.lum-open {
+  z-index: 2;
+}
+
+.lum-lightbox-caption {
+  line-height: 1.7;
+}
+
+
+@media (max-width: 460px) {
+  .lum-lightbox-inner img {
+    max-width: 150vw;
+    max-height: 88vh;
+  }
+}
